@@ -21,6 +21,9 @@
 
 module Core
   class Surety < ActiveRecord::Base
+
+    has_paper_trail
+
     include Exportable
 
     delegate :organization, :organization_department, to: :project

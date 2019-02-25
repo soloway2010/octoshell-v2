@@ -12,6 +12,9 @@
 module Core
   class QuotaKind < ActiveRecord::Base
 
+    has_paper_trail
+
+
     translates :name, :measurement
 
     validates_translated :name, :measurement, presence: true

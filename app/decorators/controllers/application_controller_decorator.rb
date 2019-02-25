@@ -96,6 +96,8 @@ ActionController::Base.class_eval do
     menu.add_item(Face::MenuItem.new(name: t("user_submenu.comments"),
                                       url: comments.index_all_comments_path))
 
+    menu.add_item(Face::MenuItem.new(name: "Журнал",
+                                      url: "/journal"))
     menu.items
   end
 

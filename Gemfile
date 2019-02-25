@@ -40,6 +40,8 @@ gem "mina" #, github: "zhum/mina", require: false
 
 gem "rollbar"
 gem "foreman"
+gem 'paper_trail'
+gem 'table_for_collection'
 gem "puma"
 gem "face",           path: "engines/face"
 gem "authentication", path: "engines/authentication"

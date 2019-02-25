@@ -12,6 +12,9 @@
 
 module Pack
   class CategoryValue < ActiveRecord::Base
+
+    has_paper_trail
+
     belongs_to :options_category, inverse_of: :category_values
     has_many :version_options, inverse_of: :category_value, dependent: :destroy
     translates :value

@@ -12,5 +12,8 @@
 
 module Jobstat
   class FloatDatum < ActiveRecord::Base
+
+    has_paper_trail
+
   end
 end

@@ -19,6 +19,9 @@ require "csv"
 
 module Sessions
   class Stat < ActiveRecord::Base
+
+    has_paper_trail
+
     GROUPS_BY = [:count]
 
     belongs_to :session

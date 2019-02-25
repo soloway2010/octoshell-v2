@@ -13,6 +13,9 @@
 
 module Pack
   class Clusterver < ActiveRecord::Base
+
+    has_paper_trail
+
     delegate :name,to: :core_cluster
     attr_accessor :stale_edit
     validate :stale_check

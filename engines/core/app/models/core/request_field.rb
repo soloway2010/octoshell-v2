@@ -10,6 +10,9 @@
 
 module Core
   class RequestField < ActiveRecord::Base
+
+    has_paper_trail
+
     belongs_to :request
     belongs_to :quota_kind
 

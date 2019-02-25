@@ -10,6 +10,9 @@
 
 module Core
   class OrganizationDepartment < ActiveRecord::Base
+
+    has_paper_trail
+
     include MergeDepartments
     include Checkable
     belongs_to :organization, inverse_of: :departments

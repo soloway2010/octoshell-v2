@@ -29,6 +29,9 @@
 module Sessions
   class Report < ActiveRecord::Base
 
+    has_paper_trail
+
+
     POINT_RANGE = (0..5)
     belongs_to :session
 

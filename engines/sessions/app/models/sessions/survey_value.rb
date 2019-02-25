@@ -18,6 +18,9 @@
 
 module Sessions
   class SurveyValue < ActiveRecord::Base
+
+    has_paper_trail
+
     belongs_to :user_survey
     belongs_to :field, class_name: "Sessions::SurveyField", foreign_key: :survey_field_id
     belongs_to :reference, polymorphic: true

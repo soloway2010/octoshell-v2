@@ -9,6 +9,9 @@
 
 module Sessions
   class ProjectsInSession < ActiveRecord::Base
+
+    has_paper_trail
+
     belongs_to :project, class_name: "Core::Project"
     belongs_to :session
 

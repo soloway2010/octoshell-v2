@@ -18,6 +18,9 @@
 module Core
   class Cluster < ActiveRecord::Base
 
+    has_paper_trail
+
+
     translates :name
 
     has_many :requests, inverse_of: :cluster, dependent: :destroy

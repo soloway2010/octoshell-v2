@@ -11,6 +11,9 @@
 
 module Core
   class City < ActiveRecord::Base
+
+    has_paper_trail
+
     include Checkable
     belongs_to :country
     has_many :organizations

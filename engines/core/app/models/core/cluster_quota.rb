@@ -10,6 +10,9 @@
 
 module Core
   class ClusterQuota < ActiveRecord::Base
+
+    has_paper_trail
+
     # Since rails doesn't recognises, that qouta in plural will be qoutas,
     # we have to manually define table name here.
     self.table_name = "core_cluster_quotas"

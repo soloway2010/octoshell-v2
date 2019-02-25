@@ -13,6 +13,9 @@
 
 module Core
   class ProjectInvitation < ActiveRecord::Base
+
+    has_paper_trail
+
     belongs_to :project
 
     after_create :send_email_to_user

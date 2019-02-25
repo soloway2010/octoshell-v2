@@ -28,6 +28,9 @@ require 'yaml/store'
 
 module Jobstat
   class Job < ActiveRecord::Base
+
+    has_paper_trail
+
     include JobHelper
 
     def get_duration_hours

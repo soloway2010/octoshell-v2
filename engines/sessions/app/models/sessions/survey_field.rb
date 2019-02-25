@@ -22,6 +22,9 @@
 # Поле опроса
 module Sessions
   class SurveyField < ActiveRecord::Base
+
+    has_paper_trail
+
     include ActionView::Helpers::JavaScriptHelper
     translates :name, :hint
 

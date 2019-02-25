@@ -11,5 +11,8 @@
 
 module Jobstat
   class DataType < ActiveRecord::Base
+
+    has_paper_trail
+
   end
 end

@@ -14,6 +14,9 @@
 module Core
   class Access < ActiveRecord::Base
 
+    has_paper_trail
+
+
     belongs_to :project
     belongs_to :cluster
 

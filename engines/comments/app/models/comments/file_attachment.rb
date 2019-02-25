@@ -15,6 +15,9 @@
 
 module Comments
   class FileAttachment < ActiveRecord::Base
+
+    has_paper_trail
+
     mount_uploader :file, FileUploader
     include Attachable
     DEFAUlT_PER = 10
